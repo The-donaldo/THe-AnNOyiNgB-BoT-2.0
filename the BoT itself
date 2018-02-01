@@ -1,1 +1,28 @@
+# using python (perferably pycharm)
 
+import sys
+import time
+
+print("THe AnNOyiNg BoT-2.0")
+print("type 'stop' to end program")
+
+response = sys.stdin.readline()
+# add more variables here later
+
+while response != "stop\n":
+    if response == "be happy\n":
+        print("(/'-')/")
+    elif response == "be sad\n":
+        print("(._.)")
+    elif response == "be spoopy\n":
+        print(";-;")
+    elif response == "wait\n":
+        time.sleep(10)
+        print("you asked for it")
+    elif response == "hack me\n":
+        print("done.")
+    # keep adding elifs until ready for release
+    else:
+        print(response)
+    time.sleep(10)
+    break
